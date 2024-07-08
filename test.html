@@ -1,0 +1,14 @@
+<html>
+<body>
+    <div>
+        <button id="ia" onclick="countMeter()">Count is 0</button>
+    </div>
+    <script>
+        let meter = 0;
+        function countMeter(){
+            meter = meter + 1;
+            document.getElementById('ia').innerHTML = `Count is `+ meter;
+        }
+    </script>
+</body>
+</html>
