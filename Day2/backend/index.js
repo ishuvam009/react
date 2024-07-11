@@ -18,7 +18,7 @@ app.use(express.json());
 
 app.post('/user/todo',async (req,res)=>{
     const createPayload = req.body;
-    const parsePayload = createTodo.safeParse(createPaylod);
+    const parsePayload = createTodo.safeParse(createPayload);
 
     if(!parsePayload.success){
         res.status(411).json({
@@ -28,7 +28,7 @@ app.post('/user/todo',async (req,res)=>{
     }
     //save in mongoDB
     await TodoSchema.create({
-        title: createPayload.username,
+        title: createPayload.title,
         description: createPayload.description,
         completed: false
     })
