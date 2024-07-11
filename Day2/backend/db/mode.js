@@ -10,6 +10,15 @@ const singnupSchema = new mongoose.Schema({
 
 const UserSignupModel = mongoose.model('user',singnupSchema);
 
+const todoSchema = new mongoose.Schema({
+    title: {type: String, require: true},
+    descroiption: {type: String, require: true},
+    completed: {type: Boolean, require: true},
+})
+
+const TodoSchema = mongoose.model('todo',todoSchema);
+
 module.exports = {
-    UserSignupModel
+    UserSignupModel,
+    TodoSchema,
 }
