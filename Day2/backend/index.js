@@ -1,10 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const { signupUser, updateTodo, createTodo, } = require('./types_zod');
 const { UserSignupModel,TodoSchema } = require('./db/mode');
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(cors());
 
 
 // app.post('user/signup',(req,res)=>{
