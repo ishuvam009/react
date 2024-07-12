@@ -75,7 +75,7 @@ export function CreateTodo() {
           margin: 10,
           padding: 10,
         }}
-        
+        onClick={handleAddTodo}
       >
         Add a Todo
       </button>
