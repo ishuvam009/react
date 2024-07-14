@@ -12,19 +12,20 @@ function App() {
 }
 
 function Components(){
-  
   const [a, setA] = useState(0)
-  const [title, setTitle] = useState("The number is "+a)
+  const [titles, setTitles] = useState("The number is "+a)
+  
 
   function ChangeTitle(){
-    setTitle("The number is "+a)
     setA(a+1)
+    console.log(a);
+    setTitles("The number is "+a)
   }
 
   return(
     <>
       <button onClick={ChangeTitle}>Click to change title</button>
-      <Header title={title}/>
+      <Header title={titles}/>
     </>
   )
 
