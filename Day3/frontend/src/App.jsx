@@ -17,9 +17,10 @@ function Components(){
   
 
   function ChangeTitle(){
-    setA(a+1)
-    console.log(a);
-    setTitles("The number is "+a)
+    const newA = a + 1;
+    setA(newA)
+    console.log(newA);
+    setTitles("The number is "+newA)
   }
 
   return(
