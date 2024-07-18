@@ -8,9 +8,18 @@ function App() {
 
   return (
     <>
-    <h1>Hello</h1>
+    <Header title={"Shuvam"}/> <br />
+    <Header title={"Shuvam Mandal"}/>
     </>
   )
+}
+
+function Header({title}){
+return(
+  <>
+    {title}
+  </>
+)
 }
 
 export default App

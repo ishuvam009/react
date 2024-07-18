@@ -6,7 +6,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function MediaCard() {
+export default function MediaCard({imageUrls}) {
+  console.log('imageUrl:', imageUrls);
   return (
     <>
     <div style={{marginLeft: '20'}}>
@@ -15,7 +16,7 @@ export default function MediaCard() {
       <CardMedia
         sx={{ height: 140 }}
         // image="https://images.unsplash.com/photo-1692842134190-d31cb40db1ec"
-        image = "https://plus.unsplash.com/premium_photo-1661295611069-249772541426"
+        image = {imageUrls}
         title="green iguana"
       />
       <CardContent>
