@@ -1,0 +1,24 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute cards evenly */
+    padding: 10px;
+  }
+  
+  .card-container > * { /* Target each direct child element */
+    margin: 10px; /* Add spacing between cards */
+    width: calc(33.33% - 20px); /* Calculate width based on desired columns (3) */
+  }
+  
+  /* Media queries for different screen sizes (optional): */
+  @media (max-width: 768px) {
+    .card-container > * {
+      width: calc(50% - 10px); /* Adjust width for smaller screens (2 columns) */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container > * {
+      width: 100%; /* Single column for very small screens */
+    }
+  }

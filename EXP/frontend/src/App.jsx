@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-      <div style={{display: 'flex', justifyContent: "space-around", padding: 10}}>
-        <MediaCard/>
-        <MediaCard/>
-        <MediaCard/>
+      <div className="card-container"> {/* Apply styles in App.css */}
+        {[1, 2, 3, 4, 5, 6].map((item) => ( 
+          <MediaCard key={item} />
+        ))}
       </div>
     </>
   )
