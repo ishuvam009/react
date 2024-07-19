@@ -1,23 +1,26 @@
 import { useState } from "react"
 
 function Cardwrapper(){
-    return <div>
-            <CardComponent innerComponent={<TextComponent/>}/>
+    return (
+        <div>
+            <CardComponent>
+                <div style={{margin: 10}}>
+                    <h1>Hello</h1>
+                    <h2>Hi how are you.</h2>
+                    <h3>Time 10 pm to 12am</h3>
+                </div>
+            </CardComponent>
         </div>
+    )
 }
 
-function TextComponent(){
-    return <div>
-            <h1>Hi There</h1>
-            <h3>Hello There</h3>
-        </div>    
 
-}
-
-function CardComponent({innerComponent}){
-    return <div style={{border: "2px solid black", width: 150}}>
-                    {innerComponent}
+function CardComponent({children}){
+    return (
+        <div style={{border: "2px solid black", width: 200}}>
+                    {children}
             </div>
+    )
 }
 
 export default Cardwrapper
