@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+let counterId = 4;
+
 export default function Todos(){
     const [todos, setTodos] = useState([
         {
@@ -16,12 +18,12 @@ export default function Todos(){
             id: 3,
             title: "Read DSA",
             description: "Read DSA between 9 pm to 12 am. ",
-        }
+        },
     ])
 
     function addTodo(){
         setTodos([...todos,{
-            id: 4,
+            id: counterId++,
             title: "Eat Food",
             description: "Eat Food between 1 pm to 2 pm.",
         }])
@@ -29,14 +31,17 @@ export default function Todos(){
 return (
     <div>
         <button onClick={addTodo}>Add a Todo</button>
-        {todos.map(todo =><Todo title={todo.title} description={todo.description}></Todo>)}
+        {todos.map(todo =><Todo key={todo.id} title={todo.title} description={todo.description}></Todo>)}
     </div>
 )
 }
 
 function Todo({title,description}){
-    <div>
+    return(
+        <div>
         <h1>{title}</h1>
         <h3>{description}</h3>
-    </div>
+        </div>
+    )
+    
 }
