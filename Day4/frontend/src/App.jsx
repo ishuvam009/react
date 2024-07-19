@@ -1,25 +1,40 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(1)
 
   return (
     <>
-    <Header title={"Shuvam"}/> <br />
-    <Header title={"Shuvam Mandal"}/>
+    <Header title={"Shanu"}/>
+    <Header title={"Bhanu"}/>
+    <NotReRender />
+    <Header title={"AbhiPoo"}/>
+    <Header title={"Geetu"}/>
+    <Header title={"Pooju"}/>
     </>
   )
 }
 
+function NotReRender(){
+  const [title, setTitle] = useState(0)
+
+  function handleChange(){
+    setTitle(title+1)
+  }
+
+  return(
+    <div>
+      <button onClick={handleChange}>Click Me</button>
+      <Header title={`Count is ${title}`} />
+    </div>
+  )
+}
+
 function Header({title}){
-return(
-  <>
+  return(
+    <div>
     {title}
-  </>
-)
+    </div>
+  )
 }
 
 export default App
