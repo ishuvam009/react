@@ -1,35 +1,27 @@
-import { useState, useEffect } from 'react'
+import { useState, useMemo } from 'react'
 
 function Sum(){
     const [count, setCount] = useState(0)
-    const [value, setValue] = useState("")
-    const [result, setResult] = useState("")
+    const [value, setValue] = useState('')
 
-    function clickhandler(){
-        setCount(count+1)
-    }
     
-    useEffect(()=>{
-        
-        function sumUpTo(num) {
-            let sum = 0;
-            for (let i = 1; i <= num; i++) {
-              sum += i;
-            }
-            return sum;
-          }
-        const response = sumUpTo(value);
-        setResult(response);  
+    let counts = useMemo(()=>{
+        console.log("Memo got called")
+        let sum = 0;
+        for (let i = 1; i <= value; i++) {
+            sum += i;
+         }
+        return sum;
 
     },[value])
 
 return(
     <>
         <input type="text" value={value} placeholder="Enter a Number" onChange={(e)=> setValue(e.target.value)}/>
-        <p>Sum is {result}</p>
-        <button onClick={clickhandler}>Count is {count}</button>
+        <p>Sum is {counts}</p>
+        <button onClick={()=>{setCount(count+1)}}>Count is {count}</button>
     </>
 )
-}
+};
 
 export default Sum;
