@@ -7,7 +7,5 @@ import One from './components/One.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    <br /> <br />
-    <One/>
   </React.StrictMode>,
 )

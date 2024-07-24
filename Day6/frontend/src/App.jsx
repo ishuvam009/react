@@ -16,6 +16,10 @@ function App() {
           setCount(count+1)
         }}>Count is {count}</button>
       </div>
+      <div>
+      <br /> <br />
+      <One/>
+      </div>
     </>
   )
 }
