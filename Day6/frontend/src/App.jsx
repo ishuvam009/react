@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+    
       <div>
         <ButttonComponent inFunction={myFunction}/> <br /> <br />
         <button onClick={()=>{
@@ -21,7 +22,7 @@ function App() {
       <br /> <br />
       <One/>
       </div>
-      
+
     </>
   )
 }
