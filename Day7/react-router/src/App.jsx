@@ -1,6 +1,6 @@
-import { Dashboard } from "./pages/Dashboard"
-import { Landing } from "./pages/Landing"
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom"
+import Dashboard from "./pages/Dashboard"
+import Landing from "./pages/Landing"
+import { BrowserRouter, Routes, Route, useNavigate, Link } from "react-router-dom"
 import './App.css'
 
 function App() {
@@ -31,7 +31,7 @@ function Appbar(){
         <button onClick={()=>{
           navigate("/dashboard")
         }}>Dashboard</button>
-        <a href="/"><p>Home</p></a>
+        <Link to="/"><p>Home</p></Link>
         <p>Career</p>
         <p>About Us</p>
       
