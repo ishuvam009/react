@@ -2,6 +2,10 @@ import Dashboard from "./pages/Dashboard"
 import Landing from "./pages/Landing"
 import { BrowserRouter, Routes, Route, useNavigate, Link } from "react-router-dom"
 import './App.css'
+import { lazy } from "react"
+
+const Landing = lazy(()=>import('./pages/Landing'))
+const Dashboard = lazy(()=> import('./pages/Dashboard'))
 
 function App() {
   
