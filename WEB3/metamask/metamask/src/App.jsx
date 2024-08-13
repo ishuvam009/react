@@ -1,30 +1,34 @@
 import { useState } from 'react'
 import './index.css'
-import metamaskIcon from './assets/metamask-icon.png'
 import bodyImage from './assets/body-img.webp'
+import Header from './components/Header'
+import WalletSvg from './assets/wallet.svg'
 
 function App() {
 
   return (
     <>
-      <nav className='fixed h-16 w-full p-10 flex bg-white'>
-        <img src={metamaskIcon} alt="metamask Icon" />
-        <p className='object-cover object-center font-bold text-2xl'>METAMASK</p>
-      </nav>
+      <Header/>
 
-      <div className='grid grid-cols-2'>
+      <div className='grid grid-cols-2 pt-32'>
         <div>
-          <h1 className='font-bold text-5xl pt-28 pl-8 pb-6'>A crypto wallet & gateway to blockchain apps</h1>
+          <h1 className='font-bold text-5xl p-8'>A crypto wallet & gateway to blockchain apps</h1>
           <span></span>
-          <p className='text-1xl pl-8'>Start exploring blockchain applications in seconds. Trusted by over 100 million users worldwide.</p>
+          <p className='text-2xl p-8'>Start exploring blockchain applications in seconds. Trusted by over 100 million users worldwide.</p>
         </div>
         <div>
-          <img className='object-cover' src={bodyImage} alt="" />
+          <img className='self-center' src={bodyImage} alt="" />
         </div>
       </div>
       
-      <div>
-        <img className='object-cover' src={bodyImage} alt="" />
+      <div className='grid grid-cols-2 bg-gray-100'>
+        <div>
+          <h2 className='font-bold text-5xl p-8'>Your web3 wallet</h2>
+          <p className='text-2xl p-8'>Available as a browser extension and as a mobile app, MetaMask equips you with a key vault, secure login, token wallet, and more—everything you need to manage your digital assets.</p>
+        </div>
+        <div>
+          <img src={WalletSvg} alt="" />
+        </div>
       </div>
 
     </>
