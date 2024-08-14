@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './index.css'
 import metamaskIcon from './assets/icon.webp'
 import bodyImage from './assets/body-img.webp'
-import Header from './components/Header'
 import WalletSvg from './assets/wallet.svg'
 import Explore from './assets/Explore.svg'
 import Browse from './assets/Browse.svg'
@@ -11,8 +10,6 @@ function App() {
 
   return (
     <>
-      <Header/>
-
       <div className='grid grid-cols-2 pt-32'>
         <div>
           <h1 className='font-bold text-5xl p-8'>A crypto wallet & gateway to blockchain apps</h1>
