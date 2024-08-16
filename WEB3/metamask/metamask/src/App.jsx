@@ -59,15 +59,30 @@ function App() {
 
       <div className='grid grid-cols-3 p-20 bg-neutral-200'>
           <div>
-            <p className='text-col text-orange-400 text-xl'>LEARN MORE</p>
+            <p className='text-orange-400 text-xl'>LEARN MORE</p>
+            <p className='pt-3'>About</p>
+            <p className='pt-3'>Developers</p>
+            <p className='pt-3'>Download</p>
+            <p className='pt-3'>MetaMask Institute</p>
+            <p className='pt-3'>News</p>
+            <p className='pt-3'>Security</p>
           </div>
             
           <div>
             <p className='text-col text-orange-400 text-xl'>GET INVOLVED</p>
+            <p className='pt-3'>GitHub</p>
+            <p className='pt-3'>Gitcoin</p>
+            <p className='pt-3'>Open Position</p>
+            <p className='pt-3'>Swag Shop</p>
+            <p className='pt-3'>Press & Partnership</p>
           </div>
 
           <div>
             <p className='text-col text-orange-400 text-xl'>LEGAL</p>
+            <p className='pt-3'>Privacy Policy</p>
+            <p className='pt-3'>Terms of Use</p>
+            <p className='pt-3'>Contributor License Agreement</p>
+            <p className='pt-3'>Site Map</p>
           </div>
 
         </div>
