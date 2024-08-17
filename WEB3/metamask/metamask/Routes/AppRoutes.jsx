@@ -10,7 +10,7 @@ export default function AppRoutes(){
     return(
         <>
             <BrowserRouter>
-              <Header />  
+              {/* <Header />   */}
                 <Routes>
                     <Route path='/' element={<App />}/>
                     <Route path='/signup' element={<SignUp />}/>

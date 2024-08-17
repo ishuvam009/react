@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './index.css'
 import metamaskIcon from './assets/icon.webp'
 import bodyImage from './assets/body-img.webp'

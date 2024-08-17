@@ -1,10 +1,11 @@
+import '../src/index.css'
 
 export default function Login(){
 
-    return (
+    return(
         <>
-            <div className="pt-32">
-                login
+            <div>
+                <p className="text-red-400">HI NEW LOGIN</p>
             </div>
         </>
     )
