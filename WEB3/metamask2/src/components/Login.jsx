@@ -19,7 +19,7 @@ export default function Login() {
 
             <div className="mb-4">
               <label className="block text-gray-700 text-lg font-bold mb-2">
-                Username
+                Password
               </label>
               <input
                 className="shadow-xl appearance-none border border-black rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -30,6 +30,15 @@ export default function Login() {
               <p className="text-red-500 text-xs italic">
                 Please choose a password.
               </p>
+            </div>
+
+            <div className="flex justify-center">
+              <button className="mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Login
+              </button>
+              <button className="mx-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                SignUp
+              </button>
             </div>
           </form>
         </div>
