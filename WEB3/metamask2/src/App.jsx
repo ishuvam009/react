@@ -4,6 +4,8 @@ import WalletSvg from './assets/wallet.svg'
 import Explore from './assets/Explore.svg'
 import Browse from './assets/Browse.svg'
 import Header from './components/Header'
+import HeartSvg from './assets/heart-svgrepo-com.svg'
+import IndianFlag from './assets/flag-india.svg'
 
 function App() {
 
@@ -86,6 +88,10 @@ function App() {
           </div>
 
         </div>
+      
+      <div className="flex flex-row justify-center bg-neutral-200">
+        <p>Made with ❤️ In 🇮🇳</p>
+      </div>
 </div>  
     </>
   )
